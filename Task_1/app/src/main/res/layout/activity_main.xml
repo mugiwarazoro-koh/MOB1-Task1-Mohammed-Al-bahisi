@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- الصف الأول -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            >
+
+            <!-- المربع الأول -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#DA835E3A"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/text_composable"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="147dp"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="8dp"
+                    android:text="@string/displays_text_and_follows_the_recommended_material_design_guidelines"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    tools:targetApi="26" />
+            </LinearLayout>
+
+            <!-- المربع الثاني -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#813703"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/image_composables"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="144dp"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="8dp"
+                    android:text="@string/creates_a_composable_that_lays_out_and_draws_a_given_painter_class_object"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    tools:targetApi="26" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- الصف الثاني -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment">
+
+            <!-- المربع الثالث -->
+
+            <!-- المربع الرابع -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#813703"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp"
+                tools:ignore="NestedWeights">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/row_composable"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="147dp"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="8dp"
+                    android:text="@string/a_layout_composable_that_places_its_children_in_a_horizontal_sequence"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    tools:targetApi="26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#DA835E3A"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/column_composable"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="146dp"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="8dp"
+                    android:text="@string/a_layout_composable_that_places_its_children_in_a_vertical_sequence"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    tools:targetApi="26" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
